@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloned Component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .cloned-wrapper {
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .code-view {
+      background-color: #f8f8f8;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      margin-top: 20px;
+    }
+    pre {
+      white-space: pre-wrap;
+      overflow-x: auto;
+    }
+    .btn {
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #3367D6;
+    }
+    .btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    .message {
+      text-align: center;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Klonlanmış Komponent</h1>
+      <button id="downloadBtn" class="btn">HTML olarak İndir</button>
+    </div>
+
+    <div id="componentWrapper" class="cloned-wrapper">
+      <p>Yükleniyor...</p>
+    </div>
+
+    <div class="code-view">
+      <h3>HTML Kodu</h3>
+      <pre id="htmlCode">// HTML kodu burada gösterilecek</pre>
+    </div>
+
+    <div class="code-view">
+      <h3>CSS Stilleri</h3>
+      <pre id="cssCode">// CSS kodu burada gösterilecek</pre>
+    </div>
+  </div>
+
+  <!-- İnline script yerine harici dosya kullanıyoruz -->
+  <script src="cloned-page.js"></script>
+</body>
+</html>
